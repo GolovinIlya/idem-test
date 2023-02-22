@@ -1,0 +1,21 @@
+.navbar {
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.navbar__menu {
+    list-style: none;
+}
+.navbar__link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px 5px;
+    transition: 0.3s;
+}
+
+.navbar__link:hover {
+    background: #000;
+    color: #fff;
+}

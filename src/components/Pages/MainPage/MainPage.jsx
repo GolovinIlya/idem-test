@@ -44,7 +44,8 @@ export const MainPage = () => {
             </div>
             <div className="modern__item modern__item_hover">
               Наши сотрудники
-              <div className="second__circle">!</div>
+              <div className="modern__circle">!</div>
+              <div className="modern__blur"></div>
             </div>
           </div>
           <div className="modern__right">

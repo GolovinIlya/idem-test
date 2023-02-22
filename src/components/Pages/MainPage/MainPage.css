@@ -1,5 +1,3 @@
-/* Шапка */
-
 .header {
     text-align: center;
     padding: 35px 0;
@@ -9,20 +7,16 @@
     font-size: 24px;
 }
 
-/* Объединяющий блок всего контента */
 
 .content {
     padding: 10px 12px 10px 13px;
 }
 
-/* Флекс-Блок объединяющий блоки для перестрояния их при адаптиве */
 
 .firstFlex {
     display: flex;
     flex-direction: column;
 }
-
-/* Первый блок */
 
 .genius {
     display: flex;
@@ -57,8 +51,6 @@
 .genius__item:last-child {
     margin-bottom: 0;
 }
-
-/* Второй блок */
 
 .workers {
     display: flex;
@@ -140,7 +132,37 @@
     background-size: cover;
     position: relative;
     color: #fff;
+    z-index: 0;
 }
+.modern__circle {
+    position: absolute;
+    display: none;
+    top: 35%;
+    left: 38%;
+    color: red;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    font-size: 40px; 
+}
+.modern__item_hover:hover .modern__circle {
+    display: block;
+}
+.modern__blur {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.modern__blur:hover {
+    backdrop-filter: blur(5px);
+}
+
 .modern__right {
     width: 68.95%;
     height: 492px;
@@ -233,4 +255,60 @@
 }
 .footer__title {
     font-size: 24px;
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 10px 0;
+    }
+    .firstFlex {
+        flex-direction: column-reverse;
+    }
+    .workers {
+        flex-direction: column;
+    }
+    .workers__left {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .workers__right {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 155px;
+        width: 100%;
+    }
+    .workers__introjection {
+        height: 100%;
+        width: 49%;
+    }
+    .genius__left {
+        height: 210px;
+        overflow: auto;
+        padding: 20px 0 10px 10px;
+    }
+    .modern {
+        display: none;
+    }
+    .lead {
+        flex-direction: column-reverse;
+    }
+    .lead__right {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .lead__left {
+        flex-direction: row;
+        width: 100%;
+    }
+    .lead__item {
+        width: 49%;
+        height: 155px;
+    }
+    .lead__item:first-child {
+        margin-bottom: 0;
+    }
+    .lead__item:last-child {
+        margin-left: auto;
+    }
 }
