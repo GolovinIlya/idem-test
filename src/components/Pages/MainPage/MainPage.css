@@ -1,0 +1,236 @@
+/* Шапка */
+
+.header {
+    text-align: center;
+    padding: 35px 0;
+    background: #c4c4c4;
+}
+.header__title {
+    font-size: 24px;
+}
+
+/* Объединяющий блок всего контента */
+
+.content {
+    padding: 10px 12px 10px 13px;
+}
+
+/* Флекс-Блок объединяющий блоки для перестрояния их при адаптиве */
+
+.firstFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Первый блок */
+
+.genius {
+    display: flex;
+    margin-bottom: 10px;
+}
+.genius__left {
+    width: 68.95%;
+    height: 492px;
+    box-sizing: border-box;
+    background: #a2a9b7;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 46px 53px 25px;
+    margin-right: 10px;
+}
+.genius__right {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
+.genius__item {
+    background: #a2a9b7;
+    height: 49%;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    font-size: 14px;
+}
+.genius__item:last-child {
+    margin-bottom: 0;
+}
+
+/* Второй блок */
+
+.workers {
+    display: flex;
+    margin-bottom: 10px;
+}
+.workers__left {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-right: 10px;
+    width: 68.98%;
+}
+.workers__item {
+    height: 155px;
+    width: 49%;
+    background: #e8ebed;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.workers__item:nth-child(2) {
+    margin-left: auto;
+}
+.workers__item:last-child {
+    width: 100%;
+    margin-top: 10px;
+}
+.workers__right {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
+.workers__introjection {
+    height: 49%;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #000;
+}
+.workers__introjection:first-child {
+    background: #90bce8;
+}
+.workers__introjection:last-child {
+    margin-bottom: 0;
+    background: #febf26;
+}
+
+
+.modern {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.modern__left {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
+.modern__item {
+    background: #e3ebd3;
+    height: 49%;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    color: #000;
+    font-size: 14px;
+}
+.modern__item:last-child {
+    margin-bottom: 0;
+}
+.modern__item_hover {
+    background: url(../../../assets/ship.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.modern__right {
+    width: 68.95%;
+    height: 492px;
+    box-sizing: border-box;
+    background: #e3ebd3;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.modern__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+.modern__key {
+    text-align: left;
+    margin-right: 5px;
+}
+.modern__value {
+    text-align: right;
+    margin-left: 5px;
+}
+.modern__border {
+    border-bottom: 2px dotted #000;
+    width: 100%;
+}
+
+
+.lead {
+    display: flex;
+}
+.lead__left {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
+.lead__item {
+    height: 49%;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #000;
+}
+.lead__item:first-child {
+    background: #ffaa87;
+}
+.lead__item:last-child {
+    margin-bottom: 0;
+    background: #f55e62;
+}
+.lead__right {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-left: 10px;
+    width: 68.98%;
+}
+.lead__dot {
+    height: 155px;
+    width: 49%;
+    background: #ffaa87;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.lead__dot:nth-child(2) {
+    margin-right: auto;
+}
+.lead__dot:first-child {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.lead__dot:last-child {
+    background: #c7abd4;
+}
+
+.footer {
+    text-align: center;
+    padding: 35px 0;
+    background: #c4c4c4;
+}
+.footer__title {
+    font-size: 24px;
+}
